@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>addClass</title>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script>
+  $(function(){
+	$( "div" ).hover(function() {
+		$( this ).addClass( "green", 1000);
+  });
+  });
+  </script>
+  <style>
+  div {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  }
+  .green {
+  width: 200px;
+  height: 200px;
+  background-color: #00f;
+  }
+  </style>
+  </head>
+  <body>
+  <div></div>
+  </body>
+</html>
