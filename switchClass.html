@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html dir="rtl">
+<head>
+<title>switchClass</title>
+<meta charset='utf-8' />
+<script src="code.jquery.com/jquery-2.1.1.min.js"></script>
+<style>
+  div {
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+  }  
+  .big {
+  width: 200px;
+  height: 200px;
+  background: #f4f4f4;
+  }  
+  .blue {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc;
+  }  
+</style>
+	
+</head>
+<body>
+<center/>
+<div class="big"></div>
+<script>
+	$( "div" ).hover(function() {  
+		$( this ).switchClass( "big","blue",1000);
+	});
+</script>
+</body
+</html>
