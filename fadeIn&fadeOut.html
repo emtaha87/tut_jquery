@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>fadeIn ~ fadeOut</title>
+  <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script >
+  $(function(){
+    $("input").click(function() {
+		$("p").fadeIn(1000);
+		$("p").fadeOut(1000);
+	});
+  });
+    
+   </script>
+  <style>
+  div {
+  width: 150px;
+  height: 30px;
+  background-color: #000;
+  }
+  p {
+  display: none;
+  color:#fff;
+  text-align:center;
+  }
+  
+  </style>
+  </head>
+  <body>
+  <div>
+<p>welcome to jQuery</p>
+  </div>
+<input type='submit' value='fade' />
+  </body>
+</html>
