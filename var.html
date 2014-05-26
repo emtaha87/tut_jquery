@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>var</title>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+$(function(){
+	$('button').click(function(){
+		var s = $( ".s" ).val();
+		if (s == ""){
+			alert('عفوا يجب ملئ اليانات قبل الضغط على الزر');
+		}else{
+					alert('تمت العملية بنجاح');
+		}
+	});
+});
+</script>
+</head>
+<body>
+<center />
+<input class='s' type='text' />
+<button>أدخل</button>
+</body>
+</html>
