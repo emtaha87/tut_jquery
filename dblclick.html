@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>dblclick</title>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+$(function(){
+	$( "button" ).dblclick(function() {
+		$( "h1" ).hide(3000);// حدث اخفاء للمحدد h1
+		$( "h1" ).delay(1000);// حدث انتظار لمدة ثانية واحدة للمحدد h1
+		$( "h1" ).show(3000);// حدث اظهار المحدد h1
+});
+});
+</script>
+</head>
+<body>
+<button>من فضلك اضغط مرتين</button>
+<h1>محمد طه</h1>
+</body>
+</html>
