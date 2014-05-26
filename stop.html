@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>stop</title>
+<script src="code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+$(function(){
+	$(".start").click(function(){
+		$(".add").animate({left:'+400px'}, 4500 );
+	});
+	$(".stop").click(function(){
+		$(".add").stop();
+	});
+});
+</script>
+<style>
+.add{
+	position: absolute;
+}
+</style>
+</head>
+<body>
+<button class="start">start</button>
+<button class="stop">stop</button>
+<h1 class="add">Mohammed Taha</h1>
+</body>
+</html>
